@@ -1,12 +1,17 @@
+#please install libraries before run this script
+#install.packages('tidycensus')
+#install.packages('sf')
+
 library(tidycensus)
 library(tidyverse)
 library(viridis)
 library(sf)
-library(mapview)
+#library(mapview)
 
 fips<-read.csv('fips.csv')
 
-#enter the access key for census data
+#Enter the access key for census data;
+#A key can be acquired at http://api.census.gov/data/key_signup.html
 census_api_key("**",overwrite = TRUE,install=TRUE)
 
 
